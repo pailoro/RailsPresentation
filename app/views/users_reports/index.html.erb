@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Local</th>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Canal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users_reports.each do |users_report| %>
+      <tr>
+        <td><%= users_report.user %></td>
+        <td><%= users_report.local %></td>
+        <td><%= users_report.lat %></td>
+        <td><%= users_report.long %></td>
+        <td><%= users_report.canal %></td>
+        <td><%= link_to 'Show', users_report %></td>
+        <td><%= link_to 'Edit', edit_users_report_path(users_report) %></td>
+        <td><%= link_to 'Destroy', users_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Users Report', new_users_report_path %>

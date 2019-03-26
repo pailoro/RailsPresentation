@@ -1,0 +1,259 @@
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+	<!-- BEGIN: Subheader -->
+	<div class="m-subheader ">
+		<div class="d-flex align-items-center">
+			<div class="mr-auto">
+				<h3 class="m-subheader__title m-subheader__title--separator">
+					Visualizando informações
+				</h3>
+				<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+					<li class="m-nav__item m-nav__item--home">
+						<a href="#" class="m-nav__link m-nav__link--icon">
+							<i class="m-nav__link-icon la la-home"></i>
+						</a>
+					</li>
+					<li class="m-nav__separator">
+						-
+					</li>
+					<li class="m-nav__item">
+						<a href="/admin/dashboard" class="m-nav__link">
+							<span class="m-nav__link-text">
+								Dashboard
+							</span>
+						</a>
+					</li>
+					<li class="m-nav__separator">
+						-
+					</li>
+					<li class="m-nav__item">
+						<a href="" class="m-nav__link">
+							<span class="m-nav__link-text">
+								<%= @usuario.name %>
+							</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- END: Subheader -->
+	<div class="m-content">
+		<!-- <div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-30" role="alert">
+			<div class="m-alert__icon">
+				<i class="flaticon-exclamation m--font-brand"></i>
+			</div>
+			<div class="m-alert__text">
+				The Metronic Datatable component supports initialization from HTML table. It also defines the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser(frontend).
+			</div>
+		</div> -->
+
+		<%= render "sharedAdmin/alert" %>
+
+		
+		<div class="m-portlet m-portlet--mobile">
+			<div class="m-portlet__body">
+				
+<!--begin: Datatable -->
+				<table class="table" id="html_table"  id="html_table" width="100%">
+					<thead style="display: none;">
+						<tr>
+							<!-- <th title="Field #1">
+								ID
+							</th> -->
+							<th title="Field #2">
+							</th>
+							<th title="Field #3">
+							</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+
+							<tr width="100%">
+								<td>
+									Nome
+								</td>
+
+								<td>
+									<%= @usuario.name %>
+								</td>
+
+							</tr>
+
+							<tr width="100%">
+								<td>
+									Email
+								</td>
+								<td>
+									<%= @usuario.email %>
+								</td>
+							</tr>
+
+
+							<tr width="100%">
+								<td>
+									Cadastrou-se em
+								</td>
+								<td>
+									<%= @usuario.created_at.strftime("%d/%m/%Y - %H:%M") %>
+								</td>
+							</tr>
+
+							<tr width="100%">
+								<td>
+									Pontos acumulados
+								</td>
+								<td>
+									0
+								</td>
+							</tr>
+
+							<tr width="100%">
+								<td>
+									Último acesso
+								</td>
+								<td>
+									<%= @usuario.last_sign_in_at.strftime("%d/%m/%Y - %H:%M") %>
+								</td>
+							</tr>
+
+
+							<tr width="100%">
+								<td>
+									Bloqueado?
+								</td>
+								<td>
+									Não
+								</td>
+							</tr>
+						
+					</tbody>
+				</table>
+				<!--end: Datatable -->
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- BEGIN: Subheader -->
+	<div class="m-subheader ">
+		<div class="d-flex align-items-center">
+			<div class="mr-auto">
+				<h3 class="m-subheader__title m-subheader__title--separator">
+					Relatório de coleta para este usuário
+				</h3>
+			</div>
+			
+		</div>
+	</div>
+	<!-- END: Subheader -->
+
+
+
+
+
+
+
+	<div class="m-content">
+		
+
+
+		
+		<div class="m-portlet m-portlet--mobile">
+			<div class="m-portlet__body">
+				<!--begin: Search Form -->
+				<div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
+					<div class="row align-items-center">
+						<div class="col-xl-8 order-2 order-xl-1">
+							<div class="form-group m-form__group row align-items-center">
+								<div class="col-md8">
+									<div class="m-input-icon m-input-icon--left">
+										<input type="text" class="form-control m-input" placeholder="Search..." id="generalSearch">
+										<span class="m-input-icon__icon m-input-icon__icon--left">
+											<span>
+												<i class="la la-search"></i>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 order-1 order-xl-2 m--align-right">
+							
+							<div class="m-separator m-separator--dashed d-xl-none"></div>
+						</div>
+					</div>
+				</div>
+				<!--end: Search Form -->
+<!--begin: Datatable -->
+				<table class="m-datatable" id="html_table" width="100%">
+					<thead>
+						<tr>
+							<!-- <th title="Field #1">
+								ID
+							</th> -->
+							<th title="Field #2">
+								Local da coleta
+							</th>
+							<th title="Field #3">
+								Canal
+							</th>
+							<th title="Field #3">
+								Hora da coleta
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						
+						
+					</tbody>
+				</table>
+				<!--end: Datatable -->
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

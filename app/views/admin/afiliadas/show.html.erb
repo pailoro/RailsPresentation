@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @afiliada.name %>
+</p>
+
+<p>
+  <strong>Razao social:</strong>
+  <%= @afiliada.razao_social %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @afiliada.phone %>
+</p>
+
+<p>
+  <strong>Cnpj:</strong>
+  <%= @afiliada.cnpj %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @afiliada.estado %>
+</p>
+
+<p>
+  <strong>Regiao:</strong>
+  <%= @afiliada.regiao %>
+</p>
+
+<p>
+  <strong>Emissora:</strong>
+  <%= @afiliada.emissora_id %>
+</p>
+
+<%= link_to 'Edit', edit_afiliada_path(@afiliada) %> |
+<%= link_to 'Back', afiliadas_path %>

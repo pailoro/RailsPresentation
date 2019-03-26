@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: campaigns
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  body       :text
+#  link       :string
+#  image      :string
+#  expiration :datetime
+#  active     :boolean          default(TRUE)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  body: MyText
+  link: MyString
+  image: MyString
+  expiration: 2019-02-12 16:47:10
+  active: false
+
+two:
+  name: MyString
+  body: MyText
+  link: MyString
+  image: MyString
+  expiration: 2019-02-12 16:47:10
+  active: false

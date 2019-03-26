@@ -1,0 +1,186 @@
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+					<!-- BEGIN: Subheader -->
+					<div class="m-subheader ">
+						<div class="d-flex align-items-center">
+							<div class="mr-auto">
+								<h3 class="m-subheader__title m-subheader__title--separator">
+									Relatórios TV
+								</h3>
+								<ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+									<li class="m-nav__item m-nav__item--home">
+										<a href="#" class="m-nav__link m-nav__link--icon">
+											<i class="m-nav__link-icon la la-home"></i>
+										</a>
+									</li>
+									<li class="m-nav__separator">
+										-
+									</li>
+									<li class="m-nav__item">
+										<a href="/admin" class="m-nav__link">
+											<span class="m-nav__link-text">
+												Dashboard
+											</span>
+										</a>
+									</li>
+									<li class="m-nav__separator">
+										-
+									</li>
+									<li class="m-nav__item">
+										<a href="" class="m-nav__link">
+											<span class="m-nav__link-text">
+												Reletórios TV
+											</span>
+
+											<%= select_tag "Estado", options_for_select(Afiliada::ESTADOS), class: "custom-select form-control", style: "width: 70px; margin-left: 20px;" %>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END: Subheader -->
+					<div class="m-content">
+
+						<!-- <div class="alert alert-info m-alert m-alert--icon m-alert--air m-alert--square m--margin-bottom-30" role="alert">
+							<div class="m-alert__icon">
+								<i class="la la-warning"></i>
+							</div>
+							<div class="m-alert__text">
+								Morris is customizable and super easy plugin to build good looking charts.
+        For more info please check out
+								<a class="m-link m-link--primary m--font-bolder" href="http://morrisjs.github.io/morris.js/" target="_blank">
+									the official documentation.
+								</a>
+							</div>
+							<div class="m-alert__close">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+							</div>
+						</div> -->
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<!--begin::Portlet-->
+								<div class="m-portlet m-portlet--tab">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon m--hide">
+													<i class="la la-gear"></i>
+												</span>
+												<h3 class="m-portlet__head-text">
+													Audiência agora em pontos
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="m-portlet__body">
+										<div id="m_morris_4" style="height:500px;"></div>
+									</div>
+								</div>
+								<!--end::Portlet-->
+							</div>
+						</div>
+
+
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<!--begin::Portlet-->
+								<div class="m-portlet m-portlet--tab">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon m--hide">
+													<i class="la la-gear"></i>
+												</span>
+												<h3 class="m-portlet__head-text">
+													Por hora
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="m-portlet__body">
+										<div id="m_morris_1" style="height:500px;"></div>
+									</div>
+								</div>
+								<!--end::Portlet-->
+							</div>
+						</div>
+
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<!--begin::Portlet-->
+								<div class="m-portlet m-portlet--tab">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon m--hide">
+													<i class="la la-gear"></i>
+												</span>
+												<h3 class="m-portlet__head-text">
+													Por dia
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="m-portlet__body">
+										<div id="m_morris_2" style="height:500px;"></div>
+									</div>
+								</div>
+								<!--end::Portlet-->
+							</div>
+						</div>
+
+
+
+
+
+
+						<!-- <div class="row">
+
+
+
+							<div class="col-lg-12">
+								<div class="m-portlet m-portlet--tab">
+									<div class="m-portlet__head">
+										<div class="m-portlet__head-caption">
+											<div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon m--hide">
+													<i class="la la-gear"></i>
+												</span>
+												<h3 class="m-portlet__head-text">
+													Audiência agora
+												</h3>
+											</div>
+										</div>
+									</div>
+									<div class="m-portlet__body">
+										<div id="m_morris_3" style="height:500px;"></div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+
+						
+
+
+						
+
+
+
+						
+						
+
+
+						
+
+
+
+					</div>
+				</div>

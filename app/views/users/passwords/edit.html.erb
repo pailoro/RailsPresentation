@@ -1,0 +1,96 @@
+<h2>Change your password</h2>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+  <%= f.hidden_field :reset_password_token %>
+
+  <div class="field">
+    <%= f.label :password, "New password" %><br />
+    <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+    <% end %>
+    <%= f.password_field :password, autofocus: true, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirm new password" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Change my password" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+
+
+
+
+
+<div class="m-login__wrapper-1 m-portlet-full-height">
+          <div class="m-login__wrapper-1-1">
+            <div class="m-login__contanier">
+              <div class="m-login__content">
+                <div class="m-login__logo">
+                  <a href="#">
+                    <%= image_tag "logoBeep.png" %>
+                  </a>
+                </div>
+                <div class="m-login__title">
+                  <h3>
+                    JUNTE-SE A NOSSA COMUNIDADE DE USUÁRIOS E BAIXE O APP
+                  </h3>
+                </div>
+                <div class="m-login__desc">
+                  Amazing Stuff is Lorem Here.Grownng Team
+                </div>
+                <div class="m-login__form-action">
+                  <a href="/" id="m_login_signup" class="btn btn-outline-focus m-btn--pill">
+                    Entrar
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="m-login__border">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<div class="m-login__wrapper-2 m-portlet-full-height">
+          <div class="m-login__contanier">
+            <div class="m-login__forget-password" style="display: block;">
+              <div class="m-login__head">
+                <h3 class="m-login__title">
+                  Defina sua nova senha
+                </h3>
+                <!-- <div class="m-login__desc">
+                  Insira seu email para recuperar a senha
+                </div> -->
+
+                <%= render "sharedAdmin/alert" %>
+              </div>
+                <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: "m-login__form m-form" }) do |f| %>
+
+                <div class="form-group m-form__group">
+                  <%= f.password_field :password, autofocus: true, autocomplete: "new-password", required: true, class: "form-control m-input", placeholder: "Nova Senha" %>
+                </div>
+
+                <div class="form-group m-form__group">
+                  <%= f.password_field :password_confirmation, autofocus: true, autocomplete: "new-password", required: true, class: "form-control m-input", placeholder: "Repetir Senha" %>
+                </div>
+
+                <div class="m-login__form-action">
+                  <%= f.submit "Definir", class: "btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air" %>
+                </div>
+              <% end %>
+            </div>
+
+
+
+          </div>
+        </div>

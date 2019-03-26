@@ -1,0 +1,138 @@
+<!-- <h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+ -->
+
+
+
+
+
+<div class="m-login__wrapper-1 m-portlet-full-height">
+          <div class="m-login__wrapper-1-1">
+            <div class="m-login__contanier">
+              <div class="m-login__content">
+                <div class="m-login__logo">
+                  <a href="#">
+                    <%= image_tag "logoBeep.png" %>
+                  </a>
+                </div>
+                
+                <div class="m-login__desc">
+                  Amazing Stuff is Lorem Here.Grownng Team
+                </div>
+                <div class="m-login__form-action">
+                  <a href="/" id="m_login_signup" class="btn btn-outline-focus m-btn--pill">
+                    Entrar
+                  </a>
+                </div>
+
+                <div class="">
+                  <h3>
+                    JUNTE-SE A NOSSA COMUNIDADE DE USUÁRIOS E BAIXE O APP
+                  </h3>
+                </div>
+
+                <%= render "sharedAdmin/download" %>
+
+              </div>
+            </div>
+            <div class="m-login__border">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+
+<div class="m-login__wrapper-2 m-portlet-full-height">
+          <div class="m-login__contanier">
+           
+
+
+            <div class="m-login__signup" style="display: block;">
+              <div class="m-login__head">
+                <h3 class="m-login__title">
+                  Cadastre-se
+                </h3>
+                
+
+                <%= render "sharedAdmin/alert" %>
+              </div>
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "m-login__form m-form", style: "margin-top: 20px;"}) do |f| %>
+              
+                <%= render "sharedAdmin/socialLogin" %>
+
+                <div class="m-login__desc" style="text-align: center;">
+                  Ou preencha os campos para criar sua conta
+                </div>
+
+
+                <div class="form-group m-form__group">
+                  <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control m-input", placeholder: "Nome Completo", required: true %>
+                </div>
+                <div class="form-group m-form__group">
+                  <%= f.email_field :email, autocomplete: "email", class: "form-control m-input", placeholder: "Email", required: true %>
+                </div>
+                <div class="form-group m-form__group">
+
+                  <%= f.password_field :password, autocomplete: "new-password", required: true, class: "form-control m-input", placeholder: "Senha" %>
+
+                </div>
+                <div class="form-group m-form__group">
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", required: true, class: "form-control m-input", placeholder: "Repetir Senha" %>
+
+                </div>
+                <div class="m-login__form-sub">
+                  <label class="m-checkbox m-checkbox--focus">
+                    <input type="checkbox" name="agree" required>
+                    Aceito os
+                    <a href="#" class="m-link m-link--focus">
+                      termos e condições de uso
+                    </a>
+                    .
+                    <span></span>
+                  </label>
+                  <span class="m-form__help"></span>
+                </div>
+                <div class="m-login__form-action">
+
+                  <%= f.submit "Cadastrar", class: "btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air" %>
+
+                </div>
+              <% end %>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>

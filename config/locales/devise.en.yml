@@ -1,0 +1,68 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+en:
+  devise:
+    confirmations:
+      confirmed: "Seu email foi confirmado com sucesso."
+      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
+      send_paranoid_instructions: "Se o seu endereço de e-mail existe no nosso banco de dados, você receberá um e-mail com instruções sobre como confirmar o seu Email em poucos minutos."
+    failure:
+      already_authenticated: "Você já está logado."
+      inactive: "Sua conta ainda não está ativada."
+      invalid: "%{authentication_keys} ou senha incorretos."
+      locked: "Sua conta está bloqueada."
+      last_attempt: "Você tem mais uma tentativa de fazer login antes de sua conta ser bloqueada."
+      not_found_in_database: "O %{authentication_keys} ou senha não foram encontrados em nosso sistema."
+      timeout: "Sua sessão expirou. Por favor faça login novamente para continuar."
+      unauthenticated: "Você precisa fazer login ou registrar-se antes de continuar."
+      unconfirmed: "Você tem que confirmar o seu endereço de e-mail antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instruções de Confirmação - BeepApp"
+      reset_password_instructions:
+        subject: "Instruções para redefinir sua senha - BeepApp"
+      unlock_instructions:
+        subject: "Instruções de Desbloqueio - BeepApp"
+      password_change:
+        subject: "Senha alterada"
+    omniauth_callbacks:
+      failure: "Não pudemos autenticar você em %{kind} porque \"%{reason}\"."
+      success: "Você fez login com o %{kind}."
+    passwords:
+      no_token: "Você não pode acessar essa página sem chegar a partir de um e-mail de redefinição de senha. Se você vem de um e-mail de redefinição de senha, por favor, certifique-se você usou a URL completa."
+      send_instructions: "Você receberá um e-mail com instruções sobre como redefinir sua senha em poucos minutos."
+      send_paranoid_instructions: "Se seu email existe em nossos registros, você irá receber um link para resgatar sua senha em alguns minutos."
+      updated: "Sua senha foi alterada com sucesso. Você agora está conectado."
+      updated_not_active: "Sua senha foi alterada com sucesso."
+    registrations:
+      destroyed: "A sua conta foi cancelada com sucesso. Esperamos te ver novamente em breve."
+      signed_up: "Bem vindo! Você se registrou com sucesso."
+      signed_up_but_inactive: "Você se inscreveu com êxito. No entanto, não foi possível se conectar porque a sua conta ainda não está ativada."
+      signed_up_but_locked: "Você se inscreveu com êxito. No entanto, não foi possível se conectar porque sua conta está bloqueada."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
+      update_needs_confirmation: "Você atualizou sua conta com êxito, mas precisamos confirmar seu novo endereço de e-mail. Por favor, verifique seu e-mail e siga o link de confirmação para confirmar o seu novo endereço de e-mail."
+      updated: "Sua conta foi atualizada com sucesso."
+    sessions:
+      signed_in: "Você fez login com sucesso."
+      signed_out: "Olá, você saiu do sistema."
+      already_signed_out: "Você já está desconectado."
+      invalid: "Email ou senha inválidos. Tente novamente com outros dados ou verifique se registro foi feito pelas redes sociais"
+    unlocks:
+      send_instructions: "Você receberá um e-mail com instruções sobre como desbloquear a sua conta em poucos minutos."
+      send_paranoid_instructions: "Se existe a sua conta, você receberá um e-mail com instruções sobre como desbloqueá-lo em poucos minutos."
+      unlocked: "A sua conta foi desbloqueado com sucesso. Por favor entre para continuar."
+  errors:
+    messages:
+      already_confirmed: "já foi confirmada, por favor tente fazer login"
+      confirmation_period_expired: "precisa ser confirmada no período de %{period}, por favor, solicite uma nova confirmação"
+      expired: "expirou, por favor solicitar um novo"
+      not_found: "nada encontrad"
+      not_locked: "não estava trancada"
+      not_saved:
+        one: "1 erro proibiu de atualizar seus dados"
+        other: "%{count} erros proíbiram de salvar seus dados:"
+  activerecord:
+    errors:
+      messages:
+        confirmation: "As senhas não combinam"
+        too_short: "A senha é muito curta (mínimo de %{count} caracteres)"

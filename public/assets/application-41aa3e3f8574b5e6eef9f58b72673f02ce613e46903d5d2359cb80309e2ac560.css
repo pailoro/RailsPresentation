@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * require_tree .
+ * require_self
+ */
+
+
+
+ @font-face{
+	font-family:Flaticon;
+	src:url(/fonts/flaticon/Flaticon.eot);
+	src:url(/fonts/flaticon/Flaticon.eot?#iefix) format("embedded-opentype"),
+	url(/fonts/flaticon/Flaticon.woff) format("woff"),
+	url(/fonts/flaticon/Flaticon.ttf) format("truetype"),
+	url(/fonts/flaticon/Flaticon.svg#Flaticon) format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+@font-face{
+	font-family:FontAwesome;
+	src:url(/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0);
+	src:url(/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"),
+	url(/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0) format("woff2"),
+	url(/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0) format("woff"),
+	url(/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0) format("truetype"),
+	url(/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");font-weight:400;
+	font-style:normal;
+}
+
+
+@font-face{
+	font-family:LineAwesome;
+	src:url(/fonts/line-awesome/line-awesome.eot?v=1.1.);
+	src:url(/fonts/line-awesome/line-awesome.eot??v=1.1.#iefix) format("embedded-opentype"),
+	url(/fonts/line-awesome/line-awesome.woff2?v=1.1.) format("woff2"),
+	url(/fonts/line-awesome/line-awesome.woff?v=1.1.) format("woff"),
+	url(/fonts/line-awesome/line-awesome.ttf?v=1.1.) format("truetype"),
+	url(/fonts/line-awesome/line-awesome.svg?v=1.1.#fa) format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+@font-face{
+	font-family:Metronic;
+	src:url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.eot);
+	src:url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.eot?#iefix) format("embedded-opentype"),
+	url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.woff2) format("woff2"),
+	url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.woff) format("woff"),
+	url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.ttf) format("truetype"),
+	url(/fonts/metronic/Metronic_fda1334c35d0f5fe2afb3afebbb6774a.svg#Metronic) format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+
+.btFB, .btGP, .btFB span, .btGP span {
+	color: #fff!important;
+}
+
+.btFB {
+	background: #303e7f;
+}
+
+.btGP {
+	background: #eb2c2d;
+}
+
+
+.custom-file-label {
+	overflow: hidden;
+	height: auto;
+}
+
+.attachinary-input {
+	margin-bottom: 20px;
+}
+
+.attachinary_container ul {
+	list-style-type: none;
+}

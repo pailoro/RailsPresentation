@@ -1,0 +1,149 @@
+
+
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+          <!-- BEGIN: Subheader -->
+          <div class="m-subheader ">
+            <div class="d-flex align-items-center">
+              <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                  Adicionar
+                </h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                  <li class="m-nav__item m-nav__item--home">
+                    <a href="/admin/dashboard" class="m-nav__link m-nav__link--icon">
+                      <i class="m-nav__link-icon la la-home"></i>
+                    </a>
+                  </li>
+                  <li class="m-nav__separator">
+                    -
+                  </li>
+                  <li class="m-nav__item">
+                    <a href="/admin/administradores" class="m-nav__link">
+                      <span class="m-nav__link-text">
+                        Administradores
+                      </span>
+                    </a>
+                  </li>
+                  <li class="m-nav__separator">
+                    -
+                  </li>
+                  <li class="m-nav__item">
+                    <a href="#" class="m-nav__link">
+                      <span class="m-nav__link-text">
+                        Adicionar
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                
+
+
+              </div>
+            </div>
+          </div>
+          <!-- END: Subheader -->
+          <div class="m-content">
+            <div class="row">
+              
+            <div class="col-md-12">
+
+              <%= render "sharedAdmin/alert" %>
+              
+              <!--begin::Portlet-->
+              <div class="m-portlet m-portlet--tab">
+                <div class="m-portlet__head">
+                  <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                      <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                      </span>
+                      <h3 class="m-portlet__head-text">
+                        Adicionar Administrador
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--begin::Form-->
+
+                <%= form_for AdminUser.new, :url => url_for(:controller => 'administradores', :action => 'create'), html: { method: :post, class: "m-form m-form--fit m-form--label-align-right" }  do |f| %>
+
+
+                  <%= devise_error_messages! %>
+                  <div class="m-portlet__body">
+                    <div class="form-group m-form__group">
+                      <label for="exampleInputEmail1">
+                        Nome Completo
+                      </label>
+
+                      <%= f.text_field :name, autofocus: true, required: true, class: "form-control m-input m-input--square" %>
+
+                    </div>
+
+                    <div class="form-group m-form__group">
+                      <label for="exampleInputEmail1">
+                        Email
+                      </label>
+                      <%= f.email_field :email, required: true, autocomplete: "email", class: "form-control m-input m-input--square" %>
+
+                      <!-- <span class="m-form__help">
+                        Este email nunca será divulgado.
+                      </span> -->
+                    </div>
+
+
+                    <div class="form-group m-form__group">
+                      <label for="exampleInputPassword1">
+                        Senha
+                      </label>
+                      <%= f.password_field :password, autocomplete: "new-password", class: "form-control m-input m-input--square" %>
+                    </div>
+
+                    <div class="form-group m-form__group">
+                      <label for="exampleInputPassword1">
+                        Repetir Senha
+                      </label>
+                      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control m-input m-input--square" %>
+
+                    </div>
+
+                    
+                  </div>
+                  <div class="m-portlet__foot m-portlet__foot--fit">
+                    <div class="m-form__actions">
+                      <!-- <button type="reset" class="btn btn-metal">
+                        Submit
+                      </button> -->
+                      <%= f.submit "Cadastrar", class: "btn btn-metal" %>
+
+                     
+                    </div>
+                  </div>
+                <% end %>
+                <!--end::Form-->
+              </div>
+              <!--end::Portlet-->
+    
+    
+    
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--   <script>
+    jQuery(function($){
+      $('.attachinary-input').attachinary();
+    });
+  </script> -->

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @advertisers_category.name %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @advertisers_category.slug %>
+</p>
+
+<%= link_to 'Edit', edit_advertisers_category_path(@advertisers_category) %> |
+<%= link_to 'Back', advertisers_categories_path %>

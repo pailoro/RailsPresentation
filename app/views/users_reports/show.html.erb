@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @users_report.user %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @users_report.local %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @users_report.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @users_report.long %>
+</p>
+
+<p>
+  <strong>Canal:</strong>
+  <%= @users_report.canal %>
+</p>
+
+<%= link_to 'Edit', edit_users_report_path(@users_report) %> |
+<%= link_to 'Back', users_reports_path %>

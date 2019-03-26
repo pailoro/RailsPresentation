@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: afiliadas
+#
+#  id           :integer          not null, primary key
+#  name         :string
+#  razao_social :string
+#  phone        :string
+#  cnpj         :string
+#  estado       :string
+#  regiao       :string
+#  emissora_id  :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  razao_social: MyString
+  phone: MyString
+  cnpj: MyString
+  estado: MyString
+  regiao: MyString
+  emissora_id: 1
+
+two:
+  name: MyString
+  razao_social: MyString
+  phone: MyString
+  cnpj: MyString
+  estado: MyString
+  regiao: MyString
+  emissora_id: 1

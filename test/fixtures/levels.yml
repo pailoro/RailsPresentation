@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: levels
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  points     :integer
+#  value      :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  points: 1
+  value: 1
+
+two:
+  name: MyString
+  points: 1
+  value: 1

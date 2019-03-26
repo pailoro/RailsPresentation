@@ -1,0 +1,148 @@
+<!-- <h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+<%= render "admin_users/shared/links" %> -->
+
+
+
+<div class="m-login__signin">
+  <div class="m-login__head">
+    <h3 class="m-login__title">
+      Entrar na Àrea Administrativa
+    </h3>
+  </div>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "m-login__form m-form" }) do |f| %>
+    <div class="form-group m-form__group">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control m-input",  placeholder: "Email"  %>
+    </div>
+    <div class="form-group m-form__group">
+      <%= f.password_field :password, autocomplete: "current-password", class: "form-control m-input m-login__form-input--last", placeholder: "Senha" %>
+    </div>
+    <div class="row m-login__form-sub">
+      <div class="col m--align-left m-login__form-left">
+        <label class="m-checkbox  m-checkbox--focus">
+          <%= f.check_box :remember_me %>
+          Lembrar-me
+          <span></span>
+        </label>
+      </div>
+      <div class="col m--align-right m-login__form-right">
+        <a href="/admin/esqueci-a-senha" id="m_login_forget_password" class="m-link">
+          Esqueceu a senha?
+        </a>
+      </div>
+    </div>
+    <div class="m-login__form-action">
+
+      <%= f.submit "Entrar", class: "btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary" %>
+    </div>
+  <% end %>
+</div>
+
+<!-- 
+
+<div class="m-login__signup">
+  <div class="m-login__head">
+    <h3 class="m-login__title">
+      Sign Up
+    </h3>
+    <div class="m-login__desc">
+      Enter your details to create your account:
+    </div>
+  </div>
+  <form class="m-login__form m-form" action="">
+    <div class="form-group m-form__group">
+      <input class="form-control m-input" type="text" placeholder="Fullname" name="fullname" >
+    </div>
+    <div class="form-group m-form__group">
+      <input class="form-control m-input" type="text" placeholder="Email" name="email" autocomplete="off">
+    </div>
+    <div class="form-group m-form__group">
+      <input class="form-control m-input" type="password" placeholder="Password" name="password">
+    </div>
+    <div class="form-group m-form__group">
+      <input class="form-control m-input m-login__form-input--last" type="password" placeholder="Confirm Password" name="rpassword">
+    </div>
+    <div class="row form-group m-form__group m-login__form-sub">
+      <div class="col m--align-left">
+        <label class="m-checkbox m-checkbox--focus">
+          <input type="checkbox" name="agree">
+          I Agree the
+          <a href="#" class="m-link m-link--focus">
+            terms and conditions
+          </a>
+          .
+          <span></span>
+        </label>
+        <span class="m-form__help"></span>
+      </div>
+    </div>
+    <div class="m-login__form-action">
+      <button id="m_login_signup_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn">
+        Sign Up
+      </button>
+      &nbsp;&nbsp;
+      <button id="m_login_signup_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom  m-login__btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="m-login__forget-password">
+  <div class="m-login__head">
+    <h3 class="m-login__title">
+      Forgotten Password ?
+    </h3>
+    <div class="m-login__desc">
+      Enter your email to reset your password:
+    </div>
+  </div>
+  <form class="m-login__form m-form" action="">
+    <div class="form-group m-form__group">
+      <input class="form-control m-input" type="text" placeholder="Email" name="email" id="m_email" autocomplete="off">
+    </div>
+    <div class="m-login__form-action">
+      <button id="m_login_forget_password_submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn m-login__btn--primaryr">
+        Request
+      </button>
+      &nbsp;&nbsp;
+      <button id="m_login_forget_password_cancel" class="btn btn-outline-focus m-btn m-btn--pill m-btn--custom m-login__btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
+<div class="m-login__account">
+  <span class="m-login__account-msg">
+    Don't have an account yet ?
+  </span>
+  &nbsp;&nbsp;
+  <a href="javascript:;" id="m_login_signup" class="m-link m-link--light m-login__account-link">
+    Sign Up
+  </a>
+</div> -->

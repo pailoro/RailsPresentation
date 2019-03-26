@@ -1,0 +1,146 @@
+<!--
+<%= form_with(model: advertisers_category, local: true) do |form| %>
+  <% if advertisers_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(advertisers_category.errors.count, "error") %> prohibited this advertisers_category from being saved:</h2>
+
+      <ul>
+      <% advertisers_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :advertisers_category_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug, id: :advertisers_category_slug %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+-->
+
+
+
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+          <!-- BEGIN: Subheader -->
+          <div class="m-subheader ">
+            <div class="d-flex align-items-center">
+              <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                  Adicionar
+                </h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                  <li class="m-nav__item m-nav__item--home">
+                    <a href="/admin/dashboard" class="m-nav__link m-nav__link--icon">
+                      <i class="m-nav__link-icon la la-home"></i>
+                    </a>
+                  </li>
+                  <li class="m-nav__separator">
+                    -
+                  </li>
+                  <li class="m-nav__item">
+                    <a href="/admin/dashboard" class="m-nav__link">
+                      <span class="m-nav__link-text">
+                        Dashboard
+                      </span>
+                    </a>
+                  </li>
+                  <li class="m-nav__separator">
+                    -
+                  </li>
+                  <li class="m-nav__item">
+                    <a href="/admin/advertisers_categories" class="m-nav__link">
+                      <span class="m-nav__link-text">
+                        Categoria de anunciantes
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                
+
+
+              </div>
+            </div>
+          </div>
+          <!-- END: Subheader -->
+          <div class="m-content">
+            <div class="row">
+              
+            <div class="col-md-12">
+
+              <%= render "sharedAdmin/alert" %>
+              
+              <!--begin::Portlet-->
+              <div class="m-portlet m-portlet--tab">
+                <div class="m-portlet__head">
+                  <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                      <span class="m-portlet__head-icon m--hide">
+                        <i class="la la-gear"></i>
+                      </span>
+                      <h3 class="m-portlet__head-text">
+                        <%= 
+                          if action_name == "new"
+                            "Adicionar Categoria de anunciantes"
+                          else
+                            "Editar Categoria de anunciantes"
+                          end
+                        %>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!--begin::Form-->
+
+                <%= form_with(model: advertisers_category, local: true) do |f| %>
+
+
+                  <div class="m-portlet__body">
+                    <div class="form-group m-form__group">
+                      <label for="exampleInputEmail1">
+                        Nome
+                      </label>
+
+                      <%= f.text_field :name, autofocus: true, required: true, class: "form-control m-input m-input--square" %>
+
+                    </div>
+
+                    <div class="m-form__actions">
+                      <!-- <button type="reset" class="btn btn-metal">
+                        Submit
+                      </button> -->
+                      <%= f.submit "Salvar", class: "btn btn-metal" %>
+
+                     
+                    </div>
+
+                    
+                  </div>
+
+
+                <% end %>
+                <!--end::Form-->
+              </div>
+              <!--end::Portlet-->
+    
+    
+    
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
